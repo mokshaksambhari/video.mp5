@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: white;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .search-box {
+            border: 1px solid #dbdbdb;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .nav-icons {
+            display: flex;
+            align-items: center;
+        }
+        .nav-icons img {
+            width: 25px;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .main-content {
+            width: 60%;
+        }
+        .post {
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            margin-bottom: 20px;
+            border-radius: 3px;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .post-header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .post-image {
+            width: 100%;
+        }
+        .post-actions {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .post-actions img {
+            width: 25px;
+            margin-right: 10px;
+        }
+        .post-likes {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        .post-comments {
+            padding: 0 10px 10px 10px;
+        }
+        .post-comments div {
+            margin-bottom: 5px;
+        }
+        .sidebar {
+            width: 25%;
+            margin-left: 20px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .suggestions {
+            background-color: white;
+            border: 1px solid #dbdbdb;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .suggestion-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .suggestion-item img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .suggestion-info {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Instagram</div>
+        <input type="text" class="search-box" placeholder="Search">
+        <div class="nav-icons">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/home.png" alt="Home">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/search.png" alt="Search">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/plus.png" alt="Add">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/like.png" alt="Like">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/user.png" alt="Profile">
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                    <div>user_name</div>
+                </div>
+                <img src="https://via.placeholder.com/600" alt="Post" class="post-image">
+                <div class="post-actions">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/like.png" alt="Like">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/comment.png" alt="Comment">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/send.png" alt="Share">
+                </div>
+                <div class="post-likes">100 likes</div>
+                <div class="post-comments">
+                    <div><strong>user_name:</strong> Nice picture!</div>
+                    <div><strong>another_user:</strong> Awesome!</div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <img src="https://via.placeholder.com/60" alt="Profile">
+                <div class="profile-info">
+                    <strong>your_username</strong>
+                    <span>Your Name</span>
+                </div>
+            </div>
+            <div class="suggestions">
+                <h4>Suggestions for you</h4>
+                <div class="suggestion-item">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                    <div class="suggestion-info">
+                        <strong>user_name1</strong>
+                        <span>Suggested for you</span>
+                    </div>
+                </div>
+                <div class="suggestion-item">
+                    <img src="https://via.placeholder.com/40" alt="User">
+                    <div class="suggestion-info">
+                        <strong>user_name2</strong>
+                        <span>Suggested for you</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
